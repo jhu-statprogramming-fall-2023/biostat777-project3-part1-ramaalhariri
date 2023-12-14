@@ -1,0 +1,32 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Loading libraries
+```{r}
+library(here)
+library(tidyverse)
+```
+
+```{r}
+tuesdata <- tidytuesdayR::tt_load('2021-07-13')
+tuesdata <- tidytuesdayR::tt_load(2021, week = 29)
+
+scoobydoo <- tuesdata$scoobydoo
+
+
+if(!dir.exists("data")){
+  dir.create("data")
+}
+
+
+if(!file.exists(here("data", "scoobydoo.RDS"))){
+  saveRDS(scoobydoo, file=here("data","scoobydoo.RDS"))
+}
+
+```
