@@ -1,0 +1,24 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+my-vignette: my-vignette.html
+last_built: 2023-12-14T20:16Z
+template:
+  bootstrap: 5
+  bootswatch: minty
+navbar:
+  type: default
+  toc: TRUE
+  right:
+    - icon: fa-github
+      href: https://github.com/ramaalhariri/
+      aria-label: GitHub
+    - icon: fa-twitter
+      href: http://twitter.com/ramaalhariri/
+      aria-label: Twitter
+authors:
+  - name: "Stephani Hicks"
+    href: "https://github.com/stephaniehicks"
+footer:
+  components:
+    legal: "Provided without any warranty."
