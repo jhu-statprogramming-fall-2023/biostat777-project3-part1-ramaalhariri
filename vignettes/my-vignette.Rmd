@@ -10,6 +10,7 @@ vignette: >
 ```{r, include=FALSE}
 library(here)
 library(tidyverse)
+library(greetings)
 ```
 
 ```{r}
@@ -106,3 +107,10 @@ ggplot(summary_table, aes(x = captured_by, y = avg_imdb, fill = captured_value))
 
 # Results and Interpretation
 It does not seem to make a huge difference which Scooby Doo character captures the monster. Moreover, there is a negative association between IMDB ratings and # of monsters in an episode. Season 3 seems to have overall better ratings than the other seasons.
+
+
+```{r}
+
+hello("ScoobyDoo")
+
+```
