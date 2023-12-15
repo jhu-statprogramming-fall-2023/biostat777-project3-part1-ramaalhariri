@@ -6,6 +6,10 @@ last_built: 2023-12-14T20:16Z
 template:
   bootstrap: 5
   bootswatch: minty
+  bslib:
+    pkgdown-nav-height: 100px
+    navbar-bg: "#3498db"
+    font-family: "Roboto, sans-serif"
 navbar:
   type: default
   toc: TRUE
@@ -14,11 +18,5 @@ navbar:
       href: https://github.com/ramaalhariri/
       aria-label: GitHub
     - icon: fa-twitter
-      href: http://twitter.com/ramaalhariri/
+      href: https://twitter.com/rama_al99/
       aria-label: Twitter
-authors:
-  - name: "Stephani Hicks"
-    href: "https://github.com/stephaniehicks"
-footer:
-  components:
-    legal: "Provided without any warranty."
